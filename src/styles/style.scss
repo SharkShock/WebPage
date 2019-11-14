@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "./variables";
-
+@import "./mixins";
 
 /* Reset */
 
@@ -31,13 +31,7 @@ body { -ms-overflow-style: scrollbar; }
 body { background: #fff; }
 
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
     transition: none !important;
   }
 
@@ -544,20 +538,6 @@ section.wrapper, article.wrapper {
 
 	/* Images */
 
-	@mixin image {
-		border: 3px solid rgba(3, 197, 155, 0);
-		border-radius: 5px;
-		box-shadow: 0 0 7px rgb(184, 184, 184);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
-		cursor: pointer;
-		&:hover { 
-			box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6); 
-			transition: 1s;
-		}
-	}
 
 	.portfolio_img {
 		@include image();
@@ -574,25 +554,19 @@ section.wrapper, article.wrapper {
 			transition: 1s;
 		}
 	}
-	
+	//hello
 	.blog_img {
-		@include image();
+		border: 3px solid rgba(3, 197, 155, 0);
+  	border-radius: 5px;
+  	box-shadow: 0 0 7px rgb(184, 184, 184);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	overflow: hidden;
 		height:50%; width:100%;
 	}
 	
-	.service_box {
-		height:100%; width:100%;
-		border: 3px solid rgba(3, 197, 155, 0);
-		border-radius: 5px;
-		box-shadow: 0 0 7px rgb(184, 184, 184);
-		padding: 40px 0 0 0;
-		margin-left: 20px;
-		cursor: pointer;
-		&:hover { 
-			box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
-			transition: 1s;
-		 }
-	}
+	
 
 /* Button */
 
@@ -1212,6 +1186,20 @@ section.wrapper, article.wrapper {
 					margin: 0;
 				}
 
+	.service_box {
+		height:100%; width:100%;
+		border: 3px solid rgba(3, 197, 155, 0);
+		border-radius: 5px;
+		box-shadow: 0 0 7px rgb(184, 184, 184);
+		padding: 40px 0 0 0;
+		margin-left: 20px;
+		cursor: pointer;
+		&:hover { 
+			box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+			transition: 1s;
+		 }
+	}
+
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 			#banner {
 				background-attachment: scroll;
@@ -1247,7 +1235,6 @@ section.wrapper, article.wrapper {
 		}
 
 		@media screen and (max-width: 980px) {
-
 			#banner {
 				background-attachment: scroll;
 				padding: 5em 0 4em 0;
