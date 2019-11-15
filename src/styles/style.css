@@ -345,17 +345,26 @@ article.wrapper header h6 + p {
 
 /* Flex */
 .flex {
-  display: -ms-flexbox;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: -moz-flex;
-  display: -ms-flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+}
+
+.flex.flex-1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex.flex-1 article {
+  width: 30%;
+  background-color: white;
 }
 
 .flex.flex-2 {
@@ -366,31 +375,32 @@ article.wrapper header h6 + p {
 
 .flex.flex-2 article {
   width: 30%;
-  background-color: white;
 }
 
 .flex.flex-3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
 }
 
 .flex.flex-3 article {
-  width: 25%;
+  background-color: white;
+  width: 30%;
 }
 
 @media screen and (max-width: 980px) {
-  .flex.flex-2 br, .flex.flex-3 br {
+  .flex.flex-1 br, .flex.flex-2 br, .flex.flex-3 br {
     width: 100%;
     margin-bottom: 3em;
   }
-  .flex.flex-2 article:last-child, .flex.flex-3 article:last-child {
+  .flex.flex-1 br, .flex.flex-2 article:last-child, .flex.flex-3 article:last-child {
     margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .flex.flex-2 br, .flex.flex-3 br {
+  .flex.flex-1 br, .flex.flex-2 br, .flex.flex-3 br {
     display: none;
   }
 }
@@ -398,10 +408,15 @@ article.wrapper header h6 + p {
 /* Form */
 form {
   margin: 0 0 2em 0;
+  width: 50%;
 }
 
 form .field {
   margin-bottom: 1.5em;
+}
+
+form .field textarea {
+  resize: none;
 }
 
 form .field.half {
@@ -411,6 +426,10 @@ form .field.half {
 
 form .field.half.first {
   margin-right: 3%;
+}
+
+form h3 {
+  color: white;
 }
 
 @media screen and (max-width: 980px) {
@@ -423,8 +442,55 @@ form .field.half.first {
   }
 }
 
-label {
+.form {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/CONTACT/contact.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/CONTACT/contact.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px;
+}
+
+.form h3 {
+  color: white;
+  padding: 10px;
+}
+
+.form article {
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
   color: #555;
+  background-color: white;
+  width: 30%;
+}
+
+.form article h3 {
+  color: #555;
+  text-align: left;
+  padding: 50px 0 0 100px;
+}
+
+.form article p {
+  text-align: left;
+  padding: 0 0 0 100px;
+}
+
+#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#form article {
+  margin: 0 0 0 100px;
+}
+
+label {
+  color: white;
   display: block;
   font-size: 0.9em;
   font-weight: 600;
@@ -434,16 +500,17 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="tel"],
 select,
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: rgba(143, 238, 174, 0.513);
-  border-radius: 10px;
-  border: none;
-  border: solid 2px rgba(143, 238, 174, 0.513);
+  background: transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid white;
+  border-radius: 5px 5px 0 0;
   color: #fff;
   display: block;
   outline: 0;
@@ -455,7 +522,6 @@ textarea {
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
-input[type="tel"]:invalid,
 select:invalid,
 textarea:invalid {
   -webkit-box-shadow: none;
@@ -465,12 +531,9 @@ textarea:invalid {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-  border-color: rgba(143, 238, 174, 0.513);
-  -webkit-box-shadow: 0 0 0 1px rgba(143, 238, 174, 0.513);
-          box-shadow: 0 0 0 1px rgba(143, 238, 174, 0.513);
+  border-bottom: 3px solid white;
 }
 
 .select-wrapper {
@@ -593,6 +656,34 @@ input[type="radio"] + label:before {
   opacity: 1.0;
 }
 
+.blog {
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.blog:hover {
+  -webkit-box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+          box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.blog h3 {
+  text-align: left;
+  padding: 25px 0 0 25px;
+}
+
+.blog p {
+  text-align: left;
+  padding: 0 25px;
+}
+
+.blog footer p {
+  display: inline-block;
+}
+
 /* Images */
 .portfolio_img {
   border: 3px solid rgba(3, 197, 155, 0);
@@ -658,10 +749,7 @@ input[type="radio"] + label:before {
 }
 
 .blog_img {
-  border: 3px solid rgba(3, 197, 155, 0);
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 7px #b8b8b8;
-          box-shadow: 0 0 7px #b8b8b8;
+  border-radius: 5px 5px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,8 +760,6 @@ input[type="radio"] + label:before {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  height: 50%;
-  width: 100%;
 }
 
 /* Button */
@@ -1229,23 +1315,14 @@ button:disabled,
 /* Banner */
 #banner {
   padding: 8em 0 9em 0;
-  background-image: url(../img/BANNER/cover.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/BANNER/cover.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/BANNER/cover.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
-}
-
-#banner:before {
-  content: '';
-  background: rgba(98, 98, 98, 0.26);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 #banner h1 {
@@ -1283,21 +1360,26 @@ button:disabled,
   margin: 0 auto 4em auto;
 }
 
-#banner .flex div {
+#banner .flex .flex div {
   border-right: 2px solid rgba(255, 255, 255, 0.2);
   padding: 0 8em;
 }
 
-#banner .flex div:last-child {
+#banner .flex .flex div .flex div:last-child {
   border: none;
   padding-right: 0;
 }
 
-#banner .flex div:first-child {
+#banner .flex .flex div .flex div:last-child .flex div:last-child {
+  border: none;
+  padding-right: 0;
+}
+
+#banner .flex .flex div .flex div:last-child .flex div:first-child {
   padding-left: 0;
 }
 
-#banner .flex div p {
+#banner .flex .flex div .flex div:last-child .flex div p {
   margin: 0;
 }
 

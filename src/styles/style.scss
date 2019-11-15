@@ -45,8 +45,6 @@ body { background: #fff; }
 		line-height: 1.65;
 	}
 
-		
-
 		@media screen and (max-width: 1680px) {
 			@include TypeFontSize;
 		}
@@ -298,15 +296,20 @@ section.wrapper, article.wrapper {
 /* Flex */
 
 .flex {
-	display: -ms-flexbox;
 	justify-content: space-between;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 }
+
+.flex.flex-1 {
+	justify-content: space-between;
+}
+
+	.flex.flex-1 article {
+		width: 30%;
+		background-color: white;      
+	}
 
 .flex.flex-2 {
 	justify-content: space-between;
@@ -314,25 +317,28 @@ section.wrapper, article.wrapper {
 
 	.flex.flex-2 article {
 		width: 30%;
-		background-color: white;      
+		      
 	}
 
 .flex.flex-3 {
 	justify-content: space-between;
+	padding: 0;
 }
 
 	.flex.flex-3 article {
-		width: 25%;
+		background-color: white;
+		width: 30%;
+		
 	}
 
 	@media screen and (max-width: 980px) {
 
-		.flex.flex-2 br, .flex.flex-3 br {
+		.flex.flex-1 br, .flex.flex-2 br, .flex.flex-3 br {
 			width: 100%;
 			margin-bottom: 3em;
 		}
 
-			.flex.flex-2 article:last-child, .flex.flex-3 article:last-child {
+		.flex.flex-1 br, .flex.flex-2 article:last-child, .flex.flex-3 article:last-child {
 				margin-bottom: 0;
 			}
 
@@ -340,7 +346,7 @@ section.wrapper, article.wrapper {
 
 	@media screen and (max-width: 480px) {
 
-		.flex.flex-2 br, .flex.flex-3 br {
+		.flex.flex-1 br, .flex.flex-2 br, .flex.flex-3 br {
 			display: none;
 		}
 
@@ -350,18 +356,29 @@ section.wrapper, article.wrapper {
 
 	form {
 		margin: 0 0 2em 0;
-	}
+		width: 50%;
 
-		form .field {
+		.field {
 			margin-bottom: 1.5em;
-		}
-			form .field.half {
-				display: inline-block;
-				width: 48%;
+
+			textarea {
+				resize: none;
 			}
-				form .field.half.first {
-					margin-right: 3%;
-				}
+		}
+
+		.field.half {
+			display: inline-block;
+			width: 48%;
+		}
+
+		.field.half.first {
+			margin-right: 3%;
+		}
+
+		h3 {
+			color: rgb(255, 255, 255);
+		}
+	}
 
 		@media screen and (max-width: 980px) {
 			form .field.half {
@@ -373,8 +390,47 @@ section.wrapper, article.wrapper {
 				}
 		}
 
+	.form {
+		background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url(../img/CONTACT/contact.jpg);
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		text-align: center;
+		padding: 100px;
+		h3 {
+			color: white;
+			padding: 10px;
+		}
+		article {
+			border: 3px solid rgba(3, 197, 155, 0);
+			border-radius: 5px;
+			color: #555;
+			background-color: white;	
+			width: 30%;
+			h3 {
+				color:#555;
+				text-align: left;
+				padding: 50px 0 0 100px;
+			}
+		
+			p {
+				text-align: left;
+				padding: 0 0 0 100px;
+			}
+		}
+	}
+
+	#form {
+    display: flex;
+		justify-content: center;
+		article {
+			margin: 0 0 0 100px;
+		}
+	}	
+
 	label {
-		color: #555;
+		color: rgb(255, 255, 255);
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
@@ -384,14 +440,15 @@ section.wrapper, article.wrapper {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	input[type="tel"],
 	select,
 	textarea {
 		appearance: none;
-		background: $primary;
-		border-radius: 10px;
-		border: none;
-		border: solid 2px $primary;
+		background: transparent;
+		border-right: 1px solid transparent;
+		border-left: 1px solid transparent;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid white;
+		border-radius: 5px 5px 0 0;
 		color: #fff;
 		display: block;
 		outline: 0;
@@ -403,7 +460,6 @@ section.wrapper, article.wrapper {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
-		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -412,11 +468,9 @@ section.wrapper, article.wrapper {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
-		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: $primary;
-			box-shadow: 0 0 0 1px $primary;
+			border-bottom: 3px solid rgb(255, 255, 255);
 		}
 
 	.select-wrapper {
@@ -536,6 +590,34 @@ section.wrapper, article.wrapper {
 		opacity: 1.0;
 	}
 
+
+	.blog {
+		border: 3px solid rgba(3, 197, 155, 0);
+		border-radius: 5px;
+		width: 150px;
+		cursor: pointer;
+		&:hover { 
+			box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6); 
+			transition: 1s;
+		}
+
+		h3 {
+			text-align: left;
+			padding: 25px 0 0 25px ;
+		}
+
+		p {
+			text-align: left;
+			padding: 0 25px;
+		}
+
+		footer {
+			p{
+				display: inline-block;
+			}
+		}
+	}
+
 	/* Images */
 
 
@@ -554,16 +636,13 @@ section.wrapper, article.wrapper {
 			transition: 1s;
 		}
 	}
-	//hello
+
 	.blog_img {
-		border: 3px solid rgba(3, 197, 155, 0);
-  	border-radius: 5px;
-  	box-shadow: 0 0 7px rgb(184, 184, 184);
-  	display: flex;
+		border-radius: 5px 5px 0 0;
+		display: flex;
   	justify-content: center;
   	align-items: center;
   	overflow: hidden;
-		height:50%; width:100%;
 	}
 	
 	
@@ -1116,26 +1195,16 @@ section.wrapper, article.wrapper {
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url(../img/BANNER/cover.jpg);
+		background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url(../img/BANNER/cover.jpg);
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-	}
 
-		#banner:before {
-			content: '';
-			background: rgba(98, 98, 98, 0.26);
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-		}
-
-		#banner h1 {
+		h1 {
 			font-size: 3.5em;
 			font-weight: 400;
 			color: #fff;
@@ -1144,47 +1213,53 @@ section.wrapper, article.wrapper {
 			padding: 0;
 		}
 
-		#banner h3 {
+		h3 {
 			font-weight: 400;
 			color: #fff;
 			margin: 0;
 			font-size: 1.5em;
 		}
 
-		#banner .icon {
+		.icon {
 			color: $primary;
 			font-size: 2em;
 		}
 
-		#banner p {
+		p {
 			font-size: 1em;
 			color: rgba(255, 255, 255, 0.55);
 			margin-bottom: 1.75em;
 		}
 
-		#banner .flex {
+		.flex {
 			justify-content: center;
 			text-align: center;
 			margin: 0 auto 4em auto;
-		}
 
-			#banner .flex div {
+			.flex div {
 				border-right: 2px solid rgba(255, 255, 255, 0.2);
 				padding: 0 8em;
-			}
 
-				#banner .flex div:last-child {
+				.flex div:last-child {
 					border: none;
 					padding-right: 0;
-				}
 
-				#banner .flex div:first-child {
-					padding-left: 0;
-				}
+					.flex div:last-child {
+						border: none;
+						padding-right: 0;
+					}
 
-				#banner .flex div p {
-					margin: 0;
+					.flex div:first-child {
+						padding-left: 0;
+					}
+
+					.flex div p {
+						margin: 0;
+					}
 				}
+			}
+		}
+	}
 
 	.service_box {
 		height:100%; width:100%;
