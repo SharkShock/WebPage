@@ -63,12 +63,6 @@ body {
   -ms-overflow-style: scrollbar;
 }
 
-@media screen and (max-width: 480px) {
-  html, body {
-    min-width: 320px;
-  }
-}
-
 body {
   background: #fff;
 }
@@ -80,6 +74,15 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   transition: none !important;
 }
 
+body {
+  -moz-transform: scale(0.8, 0.8);
+  /* Moz-browsers */
+  zoom: 0.8;
+  /* Other non-webkit browsers */
+  zoom: 80%;
+  /* Webkit browsers */
+}
+
 /* ------------------------- Type ------------------------- */
 body, input, select, textarea {
   color: #9a9a9a;
@@ -87,36 +90,6 @@ body, input, select, textarea {
   font-size: 14pt;
   font-weight: 400;
   line-height: 1.65;
-}
-
-@media screen and (max-width: 1680px) {
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
 }
 
 a {
@@ -161,12 +134,6 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-}
-
-@media screen and (max-width: 480px) {
-  h3 {
-    font-size: 1.25em;
-  }
 }
 
 h4 {
@@ -250,18 +217,6 @@ hr.major {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1280px) {
-  .inner {
-    max-width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .inner {
-    max-width: 90%;
-  }
-}
-
 /* ------------------------- Section/Article ------------------------- */
 section.special, article.special {
   text-align: center;
@@ -291,33 +246,6 @@ section.wrapper article header, article.wrapper article header {
   margin: 0;
 }
 
-@media screen and (max-width: 980px) {
-  section.wrapper section.wrapper, section.wrapper article.wrapper, article.wrapper section.wrapper, article.wrapper article.wrapper {
-    padding: 4em 0;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  section.wrapper section.wrapper, section.wrapper article.wrapper, article.wrapper section.wrapper, article.wrapper article.wrapper {
-    padding: 3em 0;
-  }
-  section.wrapper section.wrapper header, section.wrapper article.wrapper header, article.wrapper section.wrapper header, article.wrapper article.wrapper header {
-    margin-bottom: 2em;
-  }
-  section.wrapper section.wrapper header h2, section.wrapper article.wrapper header h2, article.wrapper section.wrapper header h2, article.wrapper article.wrapper header h2 {
-    font-size: 2em;
-  }
-  section.wrapper section.wrapper header p, section.wrapper article.wrapper header p, article.wrapper section.wrapper header p, article.wrapper article.wrapper header p {
-    font-size: .9em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  section.wrapper section.wrapper article, section.wrapper article.wrapper article, article.wrapper section.wrapper article, article.wrapper article.wrapper article {
-    text-align: center;
-  }
-}
-
 section.wrapper header p, article.wrapper header p {
   color: #bbb;
   position: relative;
@@ -343,7 +271,7 @@ article.wrapper header h6 + p {
   margin-top: -0.6em;
 }
 
-/* Flex */
+/* ------------------------- Flex ------------------------- */
 .flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -389,23 +317,7 @@ article.wrapper header h6 + p {
   width: 30%;
 }
 
-@media screen and (max-width: 980px) {
-  .flex.flex-1 br, .flex.flex-2 br, .flex.flex-3 br {
-    width: 100%;
-    margin-bottom: 3em;
-  }
-  .flex.flex-1 br, .flex.flex-2 article:last-child, .flex.flex-3 article:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .flex.flex-1 br, .flex.flex-2 br, .flex.flex-3 br {
-    display: none;
-  }
-}
-
-/* Form */
+/* ------------------------- Form ------------------------- */
 form {
   margin: 0 0 2em 0;
   width: 50%;
@@ -432,16 +344,6 @@ form h3 {
   color: white;
 }
 
-@media screen and (max-width: 980px) {
-  form .field.half {
-    display: block;
-    width: 100%;
-  }
-  form .field.half.first {
-    margin-right: 0;
-  }
-}
-
 .form {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/CONTACT/contact.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/CONTACT/contact.jpg);
@@ -458,6 +360,8 @@ form h3 {
 }
 
 .form article {
+  white-space: pre-line;
+  overflow: hidden;
   border: 3px solid rgba(3, 197, 155, 0);
   border-radius: 5px;
   color: #555;
@@ -587,6 +491,7 @@ textarea {
 }
 
 .blog {
+  overflow: hidden;
   border: 3px solid rgba(3, 197, 155, 0);
   border-radius: 5px;
   width: 150px;
@@ -633,6 +538,7 @@ textarea {
 }
 
 .brand-logo li a img {
+  overflow: hidden;
   width: 200px;
   height: auto;
 }
@@ -646,7 +552,7 @@ textarea {
   font-weight: bold;
 }
 
-/* Images */
+/* ------------------------- Images ------------------------- */
 .portfolio_img {
   border: 3px solid rgba(3, 197, 155, 0);
   border-radius: 5px;
@@ -708,18 +614,6 @@ textarea {
   transition: 1s;
 }
 
-@media screen and (max-width: 1280px) {
-  .team_img {
-    width: 25%;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .team_img {
-    width: 50%;
-  }
-}
-
 .blog_img {
   border-radius: 5px 5px 0 0;
   display: -webkit-box;
@@ -751,7 +645,7 @@ textarea {
           filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
-/* Button */
+/* ------------------------- Button ------------------------- */
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -787,18 +681,7 @@ button:hover,
   background-color: rgba(108, 192, 145, 0.15);
 }
 
-@media screen and (max-width: 480px) {
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"],
-  button,
-  .button {
-    padding: 0;
-    width: 100%;
-  }
-}
-
-/* Header */
+/* ------------------------- Header ------------------------- */
 .subpage {
   padding-top: 44px;
 }
@@ -881,43 +764,7 @@ button:hover,
   font-size: 1.25em;
 }
 
-@media screen and (max-width: 980px) {
-  #header a.navPanelToggle #header a.navPanelToggle {
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #header #header a {
-    padding: 0 0.5em;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  #header {
-    top: 1em;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #header {
-    top: .5em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #header {
-    font-size: .9em;
-  }
-}
-
-/* Nav */
-@media screen and (max-width: 980px) {
-  #nav {
-    display: none;
-  }
-}
-
+/* ------------------------- Nav ------------------------- */
 #navPanel {
   -webkit-transform: translatex(20em);
           transform: translatex(20em);
@@ -989,7 +836,7 @@ button:hover,
   color: inherit;
 }
 
-/* Banner */
+/* ------------------------- Banner ------------------------- */
 #banner {
   padding: 8em 0 9em 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/BANNER/cover.jpg);
@@ -1078,91 +925,7 @@ button:hover,
   transition: 1s;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  #banner {
-    background-attachment: scroll;
-  }
-}
-
-@media screen and (max-width: 1680px) {
-  #banner .flex div {
-    padding: 0 6em;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  #banner {
-    padding: 7em 0 6em 0;
-  }
-  #banner .inner {
-    padding-top: 6em;
-  }
-  #banner h1 {
-    font-size: 3em;
-  }
-  #banner h3 {
-    font-size: 1.25em;
-  }
-  #banner .flex div {
-    padding: 0 3em;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  #banner {
-    background-attachment: scroll;
-    padding: 5em 0 4em 0;
-  }
-  #banner .inner {
-    padding-top: 4em;
-  }
-  #banner h1 {
-    font-size: 2.5em;
-  }
-  #banner h3 {
-    font-size: 1.25em;
-  }
-  #banner .flex div {
-    font-size: .85em;
-    padding: 0 1.5em;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #banner {
-    padding: 4em 0 3em 0;
-  }
-  #banner .inner {
-    padding-top: 3em;
-  }
-  #banner h1 {
-    font-size: 2em;
-  }
-  #banner h3 {
-    font-size: 1.25em;
-  }
-  #banner .flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto 2em auto;
-  }
-  #banner .flex div {
-    font-size: .85em;
-    padding: 0;
-    border: none;
-    margin-bottom: 1em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #banner h1 {
-    font-size: 1.5em;
-  }
-}
-
-/* Footer */
+/* ------------------------- Footer ------------------------- */
 #footer {
   padding: 40px 0;
   background: #414141;
@@ -1194,17 +957,5 @@ button:hover,
 
 #footer .copyright a:hover {
   color: #FFF;
-}
-
-@media screen and (max-width: 980px) {
-  #footer {
-    padding: 4em 0;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #footer {
-    padding: 3em 0;
-  }
 }
 /*# sourceMappingURL=style.css.map */
