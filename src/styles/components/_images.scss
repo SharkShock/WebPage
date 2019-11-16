@@ -1,6 +1,5 @@
 /* ------------------------- Images ------------------------- */
 
-
 .portfolio_img {
   @include image();
   height:100%; width:32%;
@@ -10,6 +9,18 @@
   img {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 672px) {
+	.portfolio_img {
+    width: 45%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.portfolio_img {
+    width: 100%;
+	}
 }
 
 .team_img {
@@ -27,6 +38,59 @@
   }
 }
 
+@media only screen and (max-width: 672px) {
+	.team_img {
+    width: 45%;
+    margin-right: 15px;
+		display: block;
+    justify-content: center;
+    align-items: center;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.team_img {
+    width: 100%;
+    margin-right: 15px;
+		display: block;
+    justify-content: center;
+    align-items: center;
+	}
+}
+
+.blog {
+  overflow:hidden;
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+  &:hover { 
+    box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6); 
+    transition: 1s;
+  }
+
+  h3 {
+    text-align: left;
+    padding: 25px 0 0 25px ;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 25px;
+  }
+
+  footer {
+    p{
+      display: inline-block;
+      img {
+        width: 12px;
+        height: 12px;
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      }
+    }
+  }
+}
+
 .blog_img {
   border-radius: 5px 5px 0 0;
   display: flex;
@@ -39,21 +103,7 @@
 }
 
 
-.social-icons {
-  li {
-    display: inline;
-    margin-right: 20px;
-    img {
-      width: 15px;
-      height: 15px;
-      filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-      &:hover {
-        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-        transition: 0.5s;
-      }
-    }
-  }
-}
+/* ------------------------- Brand logo section ------------------------- */
 
 .brand-logo {
   li {
@@ -76,8 +126,53 @@
   }
 }
 
+@media only screen and (max-width: 1685px) {
+  .brand-logo {
+    li {
+      a {
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .brand-logo {
+    li {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      a {
+        img {
+          transition: 1s;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------- Social media links section ------------------------- */
+
 .boldtitle {
   font-weight: bold;
   font-size: 3.5em;
   margin: 0 0 20px 0;
+}
+
+.social-icons {
+  li {
+    display: inline;
+    margin-right: 20px;
+    img {
+      width: 15px;
+      height: 15px;
+      filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      &:hover {
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+        transition: 0.5s;
+      }
+    }
+  }
 }

@@ -230,12 +230,6 @@ body {
   -ms-overflow-style: scrollbar;
 }
 
-@media screen and (max-width: 480px) {
-  html, body {
-    min-width: 320px;
-  }
-}
-
 body {
   background: #fff;
 }
@@ -548,6 +542,36 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   background-color: white;
 }
 
+@media only screen and (max-width: 1024px) {
+  .flex.flex-1 article {
+    width: 100%;
+    margin: 15px 20% 0 20%;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .flex.flex-1 article {
+    width: 100%;
+    margin: 15px 0 0 0;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
 .flex.flex-2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -570,6 +594,16 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   width: 32%;
   height: auto;
   background-color: white;
+}
+
+@media only screen and (max-width: 876px) {
+  .flex.flex-4 {
+    display: block;
+  }
+  .flex.flex-4 article {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
 /* Box Model */
@@ -681,8 +715,8 @@ form h3 {
   border-radius: 5px;
   color: #555;
   background-color: white;
-  width: 30%;
-  height: 25em;
+  width: 50%;
+  height: 22em;
 }
 
 .form article h3 {
@@ -694,8 +728,8 @@ form h3 {
 
 .form article p {
   text-align: left;
-  padding: 0 0 0 60px;
-  margin: 10px;
+  padding: 0 60px 0 60px;
+  margin: 0;
 }
 
 .form article p img {
@@ -804,40 +838,50 @@ textarea {
   padding: 0.75em 1em;
 }
 
-.blog {
-  overflow: hidden;
-  border: 3px solid rgba(3, 197, 155, 0);
-  border-radius: 5px;
-  width: 150px;
-  cursor: pointer;
+@media only screen and (max-width: 1280px) {
+  #form {
+    display: block;
+  }
+  #form article {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #form article header {
+    display: none;
+  }
+  #form article p {
+    margin-top: 10px;
+  }
 }
 
-.blog:hover {
-  -webkit-box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
-          box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
-  -webkit-transition: 1s;
-  transition: 1s;
+form {
+  width: 100%;
 }
 
-.blog h3 {
-  text-align: left;
-  padding: 25px 0 0 25px;
+@media only screen and (max-width: 1068px) {
+  #form article {
+    display: block;
+    height: auto;
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #form article p {
+    margin-top: 0;
+  }
 }
 
-.blog p {
-  text-align: left;
-  padding: 0 25px;
-}
-
-.blog footer p {
-  display: inline-block;
-}
-
-.blog footer p img {
-  width: 12px;
-  height: 12px;
-  -webkit-filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-          filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+form {
+  width: 100%;
 }
 
 /* ------------------------- Footer ------------------------- */
@@ -949,6 +993,18 @@ button:hover,
   width: 100%;
 }
 
+@media only screen and (max-width: 672px) {
+  .portfolio_img {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio_img {
+    width: 100%;
+  }
+}
+
 .team_img {
   border: 3px solid rgba(3, 197, 155, 0);
   border-radius: 5px;
@@ -989,6 +1045,70 @@ button:hover,
   width: 100%;
 }
 
+@media only screen and (max-width: 672px) {
+  .team_img {
+    width: 45%;
+    margin-right: 15px;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .team_img {
+    width: 100%;
+    margin-right: 15px;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.blog {
+  overflow: hidden;
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.blog:hover {
+  -webkit-box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+          box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.blog h3 {
+  text-align: left;
+  padding: 25px 0 0 25px;
+}
+
+.blog p {
+  text-align: left;
+  padding: 0 25px;
+}
+
+.blog footer p {
+  display: inline-block;
+}
+
+.blog footer p img {
+  width: 12px;
+  height: 12px;
+  -webkit-filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+          filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
 .blog_img {
   border-radius: 5px 5px 0 0;
   display: -webkit-box;
@@ -1007,25 +1127,7 @@ button:hover,
   width: 100%;
 }
 
-.social-icons li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.social-icons li img {
-  width: 15px;
-  height: 15px;
-  -webkit-filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-          filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-}
-
-.social-icons li img:hover {
-  -webkit-filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-          filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
+/* ------------------------- Brand logo section ------------------------- */
 .brand-logo li {
   display: inline;
   -webkit-box-pack: center;
@@ -1052,9 +1154,51 @@ button:hover,
   transition: 0.5s;
 }
 
+@media only screen and (max-width: 1685px) {
+  .brand-logo li a img {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .brand-logo li {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brand-logo li a img {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
+/* ------------------------- Social media links section ------------------------- */
 .boldtitle {
   font-weight: bold;
   font-size: 3.5em;
   margin: 0 0 20px 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.social-icons li img {
+  width: 15px;
+  height: 15px;
+  -webkit-filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+          filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+.social-icons li img:hover {
+  -webkit-filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+          filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
