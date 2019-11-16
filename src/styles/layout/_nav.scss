@@ -1,0 +1,69 @@
+/* ------------------------- Nav ------------------------- */
+
+	
+#navPanel {
+  transform: translatex(20em);
+  transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  visibility: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: $primary;
+  color: #daefe3;
+  height: 100%;
+  max-width: 80%;
+  width: 20em;
+  padding: 0.5em 1.25em;
+  z-index: 10010;
+
+  a:not(.close) {
+    border-top: solid 1px $primary;
+    color: #daefe3;
+    font-weight: 600;
+    display: block;
+    padding: 0.75em 0;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  a:not(.close):first-child {
+    border: none;
+  }
+
+  .close {
+    text-decoration: none;
+    border: 0;
+    color: #daefe3;
+    cursor: pointer;
+    display: block;
+    height: 4em;
+    padding-right: 1.25em;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    vertical-align: middle;
+    width: 5em;
+  }
+
+  .close:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    content: '\f00d';
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  .close:hover {
+    color: inherit;
+  }
+}

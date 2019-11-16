@@ -1,0 +1,83 @@
+/* ------------------------- Images ------------------------- */
+
+
+.portfolio_img {
+  @include image();
+  height:100%; width:32%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.team_img {
+  @include image();
+  height:100%; width:23.5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  &:hover {
+    filter: grayscale(100%);
+    transition: 1s;
+  } 
+
+  img {
+    width: 100%;
+  }
+}
+
+.blog_img {
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+
+.social-icons {
+  li {
+    display: inline;
+    margin-right: 20px;
+    img {
+      width: 15px;
+      height: 15px;
+      filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      &:hover {
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.brand-logo {
+  li {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    a {
+      img {
+        overflow:hidden;
+        width: 200px;
+        height: auto;
+        filter: invert(48%) sepia(0%) saturate(0%) hue-rotate(130deg) brightness(0%) contrast(0%);
+        &:hover {
+          filter: none;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.boldtitle {
+  font-weight: bold;
+  font-size: 3.5em;
+  margin: 0 0 20px 0;
+}

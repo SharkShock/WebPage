@@ -1,0 +1,53 @@
+/* ------------------------- Section/Article ------------------------- */
+
+
+section.special, article.special {
+	text-align: center;
+
+	article {
+		text-align: left;
+	}
+}
+
+section.wrapper, article.wrapper {
+	padding: 6em 0;
+	background: rgb(233,233,233);
+	background: $sectionBackground;
+	
+	header h2 {
+		font-size: 2.75em;
+		margin: 0 0 .5em 0;
+	}
+
+	header p {
+		font-size: 1em;
+	}
+
+	article header {
+		margin: 0;
+	}
+
+	header p {
+		color: #bbb;
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	header h2 + p {
+		font-size: 1.25em;
+		margin-top: -1em;
+	}
+
+	header h3 + p {
+		font-size: 1.1em;
+		margin-top: -0.8em;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+	}
+}
+

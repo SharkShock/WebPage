@@ -1,0 +1,121 @@
+/* ------------------------- Banner ------------------------- */
+
+#banner {
+  padding: 8em 0 9em 0;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+  url(../img/BANNER/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .icon {
+    color: $primary;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 1.75em;
+  }
+
+  .flex {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 4em auto;
+
+    .flex div {
+      border-right: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 0 8em;
+
+      .flex div:last-child {
+        border: none;
+        padding-right: 0;
+
+        .flex div:last-child {
+          border: none;
+          padding-right: 0;
+        }
+
+        .flex div:first-child {
+          padding-left: 0;
+        }
+
+        .flex div p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+#banner
+	{
+		overflow: hidden;
+		padding: 7em 0em 5em 0em;
+		background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url(../img/BANNER/cover.jpg);
+		background-size: cover;
+		text-align: center;
+		color: rgba(255,255,255,.8);
+	}
+
+	#banner .title
+	{
+		margin-bottom: 1em;
+		text-transform: uppercase !important;
+	}
+
+	#banner .title h2
+	{
+		color: #FFF;
+	}
+
+	#banner .title .byline
+	{
+		color: rgba(255,255,255,.6);
+	}
+	
+	#banner .button
+	{
+		margin-top: 3em;
+		background: #009E2D !important;
+  }
+  
+
+.service_box {
+  height:100%; width:100%;
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgb(184, 184, 184);
+  padding: 40px 0 0 0;
+  cursor: pointer;
+  &:hover { 
+    box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+    transition: 1s;
+   }
+}

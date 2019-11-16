@@ -1,0 +1,34 @@
+/* ------------------------- Footer ------------------------- */
+
+#footer {
+  padding: 40px 0;
+  background: #414141;
+  color: #fff;
+  text-align: center;
+
+  h3 {
+    color: #FFF;
+    margin-bottom: 2em !important;
+  }
+
+  label {
+    text-align: left;
+    color: #FFF;
+  }
+
+  .copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1em;
+    margin: 10px 0 10px 0;
+    padding: 0;
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FFF;
+    }
+  }
+}

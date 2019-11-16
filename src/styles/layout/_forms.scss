@@ -1,0 +1,196 @@
+/* ------------------------- Form ------------------------- */
+
+form {
+  margin: 0 0 2em 0;
+  width: 50%;
+
+  .field {
+    margin-bottom: 1.5em;
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  .field.half {
+    display: inline-block;
+    width: 48%;
+  }
+
+  .field.half.first {
+    margin-right: 3%;
+  }
+
+  h3 {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.form {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+  url(../img/CONTACT/contact.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px;
+  h3 {
+    color: white;
+    padding: 10px;
+  }
+  article {
+    margin: 0 0 0 100px;
+    white-space: pre-line;
+    overflow:hidden;
+    border-radius: 5px;
+    color: #555;
+    background-color: white;	
+    width: 30%;
+    height: 25em;
+    h3 {
+      color:#555;
+      text-align: left;
+      padding: 0 0 0 60px;
+      margin: 0;
+    }
+  
+    p {
+      text-align: left;
+      padding: 0 0 0 60px;
+      margin: 10px;
+      img {
+        width: 15px;
+        height: 15px;
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      }
+    }
+  }
+}
+
+#form {
+  display: flex;
+  justify-content: center;		
+}	
+
+label {
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  appearance: none;
+  background: transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid white;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
+  input[type="text"]:invalid,
+  input[type="password"]:invalid,
+  input[type="email"]:invalid,
+  select:invalid,
+  textarea:invalid {
+    box-shadow: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    border-bottom: 3px solid rgb(255, 255, 255);
+  }
+
+.select-wrapper {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+  .select-wrapper:before {
+    content: "";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+  }
+
+  .select-wrapper:before {
+    color: #fff;
+    display: block;
+    height: 2.75em;
+    line-height: 2.75em;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 2.75em;
+  }
+
+  .select-wrapper select::-ms-expand {
+    display: none;
+  }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  height: 2.75em;
+}
+
+textarea {
+  padding: 0.75em 1em;
+}
+
+.blog {
+  overflow:hidden;
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+  &:hover { 
+    box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6); 
+    transition: 1s;
+  }
+
+  h3 {
+    text-align: left;
+    padding: 25px 0 0 25px ;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 25px;
+  }
+
+  footer {
+    p{
+      display: inline-block;
+      img {
+        width: 12px;
+        height: 12px;
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,84 @@
+/* ------------------------- Header ------------------------- */
+
+.subpage {
+  padding-top: 44px;
+  #header {
+    background: $primary;
+    top: 0;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+  }
+}
+
+#header {
+  color: #fff;
+  cursor: default;
+  height: 3.25em;
+  left: 0;
+  line-height: 3.25em;
+  position: absolute;
+  text-align: right;
+  top: 2em;
+  width: 100%;
+  z-index: 10001;
+
+  .inner {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .logo {
+    border: 3px solid white;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+    height: inherit;
+    left: 0;
+    line-height: 15px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 8px 10px;
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+
+    strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    padding: 0 0.75em;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+
+  a:last-child {
+    padding-right: 0;
+  }
+
+  a.navPanelToggle {
+    display: none;
+    text-decoration: none;
+    height: 4em;
+    width: 4em;
+    z-index: 10003;
+
+    .fa {
+      font-size: 1.25em;
+    }
+  }
+}
