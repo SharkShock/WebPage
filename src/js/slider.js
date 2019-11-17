@@ -1,103 +1,64 @@
-(function(window, document, $) {
+var slideIndex = 1;
+showSlides(slideIndex);
 
-	$( function() {
-		var slideIndex = 0;
-		var $slides = $('.mySlides');
-		var $dots = $('.dot');
-		var $stop = $('.stop');
-		window.control = false;
-		window.auto = true;
-		window.stop = false;
-		
-		
-		$slides.hide();
-		$slides.removeClass('hide');
-		
-		autoSlide();  
-		
-		 
-		$dots.on('click', function() {
-			clearTimeout(timer);
-			console.log($(this).index());
-			slideIndex = $(this).index();
-			window.auto = false;
-			autoSlide();
-		});
-		
-		$('.next').on('click', function() {
-			window.control = true;
-			showSlides(slideIndex += 1);
-			slideIndex += -1;
-			window.control = false;
-			window.auto = false;
-			showSlides();
-			console.log("executes-next");
-			});
-										
-		$('.prev').on('click', function() {
-			window.control = true;
-			showSlides(slideIndex += -1);
-			slideIndex += -1;
-			window.control = false;
-			window.auto = false;
-			showSlides();
-			});
-		
-		$stop.on('click', function(event) {
-			event.preventDefault();
-			if (!window.stop) {
-			$(this).text('Start');
-			clearTimeout(timer);
-			window.stop = true;
-			} else {
-				$(this).text('Stop');
-				autoSlide();
-				window.stop = false;
-			}
-		});
-		
-		function showSlides(n) {
-			if (!window.control) {
-				autoSlide();
-			} else {
-				controlSlide(n)
-			}
-		}
-		
-		function myTimer(func) {
-			 timer = setTimeout(func, 3000); 
-		}
-			
-		function autoSlide() {
-			$stop.text('Stop');
-			window.stop = false;
-			$slides.each( function() {
-				$(this).hide();
-			});
-			slideIndex += 1;
-			if (!window.auto) {
-				if (slideIndex > $slides.length) {slideIndex = 0};
-				$slides.eq(slideIndex - 1).show();
-			} else {
-			if (slideIndex> $slides.length) {slideIndex = 1};
-			$slides.eq(slideIndex - 1).show();
-			}
-			$('.active').removeClass('active');
-			$dots.eq(slideIndex - 1).addClass('active');
-			myTimer(autoSlide);
-			window.execute = true;
-		}
-		
-		function controlSlide(n) {
-			if (n > $slides.length) slideIndex = 1;
-			if (0 > n) slideIndex = $slides.length-1;
-			$slides.each( function() {
-				$(this).hide();
-			});
-			$slides.eq(slideIndex-1).show();
-			clearTimeout(timer);
-		}
-			
-	});
-		
-	})(window, document, window.jQuery); 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+var slideIndex = [1,1];
+/* Class the members of each slideshow group with different CSS classes */
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
