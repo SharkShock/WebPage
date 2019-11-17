@@ -51,3 +51,165 @@ section.wrapper, article.wrapper {
 	}
 }
 
+/* ------------------------- Brand logo section ------------------------- */
+
+.brand-logo {
+  li {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    a {
+      img {
+        overflow:hidden;
+        width: 200px;
+        height: auto;
+        filter: invert(48%) sepia(0%) saturate(0%) hue-rotate(130deg) brightness(0%) contrast(0%);
+        &:hover {
+          filter: none;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1685px) {
+  .brand-logo {
+    li {
+      a {
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .brand-logo {
+    li {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      a {
+        img {
+          transition: 1s;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------- Blog section ------------------------- */
+
+.blog {
+  overflow:hidden;
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+  &:hover { 
+    box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6); 
+    transition: 1s;
+  }
+
+  h3 {
+    text-align: left;
+    padding: 25px 0 0 25px ;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 25px;
+  }
+
+  footer {
+    p{
+      display: inline-block;
+      img {
+        width: 12px;
+        height: 12px;
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      }
+    }
+  }
+}
+
+/* ------------------------- Social media links section ------------------------- */
+
+.boldtitle {
+  font-weight: bold;
+  font-size: 3.5em;
+  margin: 0 0 20px 0;
+}
+
+.social-icons {
+  li {
+    display: inline;
+    margin-right: 20px;
+    img {
+      width: 15px;
+      height: 15px;
+      filter: invert(48%) sepia(0%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      &:hover {
+        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.social-icons-team {
+  li {
+    display: inline;
+    margin: 0 10px;
+    filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+/* ------------------------- Review section ------------------------- */
+
+
+.review {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+  url(../img/REVIEW/review.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+	padding: 100px;
+	height: 100%;
+
+	article {
+		background-color: #fff;
+		border-radius: 5px;
+		display: inline-block;
+    justify-content: center;
+    align-items: center;
+		width: 50em;
+		height: 25em;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.review {
+    padding: 100px 20px;
+    article {
+      width: 80%;
+    }
+	}
+}
+
+@media only screen and (max-width: 656px) {
+	.review {
+    padding: 100px 10px;
+    article {
+      width: 100%; 
+    }
+	}
+}
