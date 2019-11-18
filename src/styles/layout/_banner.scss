@@ -8,6 +8,7 @@
   position: relative;
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 14pt;
+
   
 }
 
@@ -41,15 +42,14 @@
   }
 
   .banner.full {
-    padding: 0;
-    min-height: 100vh;
-    height: 100vh !important;
+    min-height: 70vh;
+    height: 70vh !important;
   }
 
   .banner.half {
     padding: 0;
-    min-height: 50vh;
-    height: 50vh !important;
+    min-height: 40vh;
+    height: 40vh !important;
   }
 
   .banner:after {
