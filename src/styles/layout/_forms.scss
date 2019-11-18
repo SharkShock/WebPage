@@ -47,6 +47,7 @@ form {
     background-color: white;	
     width: 50%;
     height: 22em;
+
     h3 {
       color:#555;
       text-align: left;
@@ -64,6 +65,13 @@ form {
         filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
       }
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .form {
+    padding-left: 0;
+    padding-right: 0; 
   }
 }
 
@@ -170,6 +178,7 @@ textarea {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+      transition: 0.5s;
       header {
         display: none;
       }

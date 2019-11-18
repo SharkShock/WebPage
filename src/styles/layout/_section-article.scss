@@ -105,7 +105,6 @@ section.wrapper, article.wrapper {
 
 .blog {
   overflow:hidden;
-  border: 3px solid rgba(3, 197, 155, 0);
   border-radius: 5px;
   width: 150px;
   cursor: pointer;
@@ -142,6 +141,7 @@ section.wrapper, article.wrapper {
   font-weight: bold;
   font-size: 3.5em;
   margin: 0 0 20px 0;
+  overflow: hidden;
 }
 
 .social-icons {
@@ -207,4 +207,19 @@ section.wrapper, article.wrapper {
       width: 100%; 
     }
 	}
+}
+
+/* ------------------------- Service section ------------------------- */
+
+.service_box {
+  height:100%; width:100%;
+  border: 3px solid rgba(3, 197, 155, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgb(184, 184, 184);
+  padding: 40px 0 0 0;
+  cursor: pointer;
+  &:hover { 
+    box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
+    transition: 1s;
+   }
 }

@@ -16,7 +16,6 @@
     <!------------------------- JS ------------------------->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-
 </head>
 
 <body>
@@ -35,15 +34,32 @@
     </header>
 
     <!------------------------- BANNER ------------------------->
-    <section id="banner">
-        <div class="inner">
-            <header>
-                <h1>ALWAYS A STEP AHEAD </br> GO PRO</h1>
-            </header>
-            <footer>
-                <a href="#" class="link">Learn More</a>
-            </footer>
-        </div>
+
+    <section class="banner full">
+        <article>
+            <img src="./img/BANNER/cover3.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <h3>ALWAYS A STEP AHEAD </br> GO PRO</h3>
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="./img/BANNER/cover2.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <h3>ALWAYS A STEP AHEAD </br> GO PRO</h3>
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="./img/BANNER/cover1.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <h3>ALWAYS A STEP AHEAD </br> GO PRO</h3>
+                </header>
+            </div>
+        </article>
     </section>
 
     <!------------------------- SERVICE ------------------------->
@@ -128,11 +144,25 @@
                     <img src="img/PORTFOLIO/item6.jpg" alt="icon 02" />
                 </div>
             </div>
+            <div id="content" class="flex flex-2">
+                <div class="portfolio_img">
+                    <img src="img/PORTFOLIO/item1.jpg" alt="icon 01" />
+                </div>
+            </div>
             <footer>
-                <a href="#" class="button">Load More</a>
+                <input type='button' class="button" id='hideshow' value='Load More'>
             </footer>
         </div>
     </section>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#hideshow').one('click', function (event) {
+                jQuery('#content').toggle('show');
+
+            });
+        });
+    </script>
 
     <!------------------------- TEAM MEMBER ------------------------->
     <section id="three" class="wrapper align-center">
@@ -198,12 +228,45 @@
 
     <!------------------------- REVIEW ------------------------->
 
-    <section id="three" class="review">
-        <div class="review-slider">
+    <section class="review">
+        <div class="review-wraper">
+            <div class="slideshow-container">
 
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="slideimg" src="./img/SLIDER/slider1.png">
+                    <div class="text">Designing is a matter of concentration. You go deep into what you want to do. It's
+                        about intensive research, really. The concentration is warm and
+                        intimate and like
+                        the fire inside the earth intense but not distorted.</div>
+                </div>
 
+                <div class="mySlides fade">
+                    <img class="slideimg" src="./img/SLIDER/slider2.png">
+                    <div class="text">Designing is a matter of concentration. You go deep into what you want to do. It's
+                        about intensive research, really. The concentration is warm and
+                        intimate and like
+                        the fire inside the earth intense but not distorted.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slideimg" src="./img/SLIDER/slider1.png">
+                    <div class="text">Designing is a matter of concentration. You go deep into what you want to do. It's
+                        about intensive research, really. The concentration is warm and
+                        intimate and like
+                        the fire inside the earth intense but not distorted.</div>
+                </div>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </section>
+
     <!------------------------- BRAND LOGO ------------------------->
     <section id="three" class="wrapper align-center">
         <div class="inner">
@@ -336,9 +399,19 @@
     </footer>
 
     <!------------------------- SCRIPTS ------------------------->
-    <script type="text/javascript" src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.scrollex.min.js"></script>
+    <script src="./js/skel.min.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
 
 
 </body>
 
 </html>
+
+
+
+
+
+<!---made by https://github.com/SharkShock--->

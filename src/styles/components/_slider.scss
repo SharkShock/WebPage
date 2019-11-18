@@ -1,0 +1,66 @@
+//----------------------------- Review section simple slider --------------------------------//
+
+.review-wraper {
+  background: #ffff;
+  border-radius: 5px;
+  overflow:hidden;
+  display: block;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: #9a9a9a;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  padding: 8px 20px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(0, 128, 0, 0.329);
+  border-radius: 0%;    
+  transform: rotate(45deg);    //rotator for indicator 
+  color: $btnHover; 
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: $primary;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

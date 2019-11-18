@@ -36,4 +36,18 @@ button,
     transition: 1s;
   }
 
+  @media only screen and (max-width: 400px) {
+    .button {
+      margin: 0;     
+    }
+  }
 
+
+  /* ------------------------- Load more button ------------------------- */
+
+  #content{
+    display: none;
+  }
+  #content.show{
+    display: inline-block;
+  }
