@@ -292,7 +292,19 @@
 @media screen and (max-width: 414px) {
   .banner {
     h3 {
+      margin-top: 20px;
       font-size: 20px;
+      float: left;
+      text-align: left;
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 208px) {
+  .banner {
+    h3 {
+      display: none;
     }
   }
 }
