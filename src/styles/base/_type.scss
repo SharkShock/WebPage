@@ -2,10 +2,7 @@
 
 body, input, select, textarea {
   color: #9a9a9a;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 14pt;
-  font-weight: 400;
-  line-height: 1.65;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
   @media screen and (max-width: 1680px) {
@@ -67,13 +64,17 @@ em, i {
 }
 
 p {
+  color: #000000;
   margin: 0 0 2em 0;
+  font-size: 18pt;
+  line-height: 3em;
+  letter-spacing: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #555;
-  font-weight: 400;
-  line-height: 1.5;
+  color: #4a4747;
+  line-height: 2em;
+  letter-spacing: 0.05em;
   margin: 0 0 1em 0;
 }
 
@@ -88,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 28pt;
 }
 
   @media screen and (max-width: 480px) {
@@ -177,7 +178,7 @@ hr {
 }
 
 .inner {
-  max-width: 75em;
+  max-width: 85em;
   margin: 0 auto;
 }
 
@@ -196,3 +197,30 @@ hr {
     }
 
   }
+
+@media screen and (max-width: 680px) {
+
+  p {
+    font-size: 12pt;
+    line-height: 2em;
+    padding: 0 10px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 14pt;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  p {
+    font-size: 10pt;
+    line-height: 1.4em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 12pt;
+  }
+
+}

@@ -1,7 +1,7 @@
 /* ------------------------- Form ------------------------- */
 
 form {
-  margin: 0 0 2em 0;
+
   width: 50%;
 
   .field {
@@ -34,31 +34,38 @@ form {
   background-repeat: no-repeat;
   text-align: center;
   padding: 60px;
+  
   h3 {
     color: white;
-    padding: 10px;
+    padding: 40px;
+    font-size: 36pt;
+
   }
   article {
-    margin: 0 0 0 100px;
-    white-space: pre-line;
+    margin: 0 0 0 50px;
     overflow:hidden;
     border-radius: 5px;
     color: #555;
     background-color: white;	
-    width: 50%;
-    height: 22em;
+    width: 80%;
+
 
     h3 {
-      color:#555;
+      letter-spacing:0.05em;
+      color: #4a4747c9;
       text-align: left;
       padding: 0 0 0 60px;
-      margin: 0;
+      margin: 80px 0;
+      font-size: 40pt;
     }
   
     p {
+      line-height: 29.27 pt;
+      letter-spacing:-0.02em;
       text-align: left;
-      padding: 0 60px 0 60px;
+      padding: 0 60px;
       margin: 0;
+      font-size: 20pt;
       img {
         width: 15px;
         height: auto;
@@ -68,29 +75,24 @@ form {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .form {
-    padding-left: 0;
-    padding-right: 0; 
-  }
-}
-
 #form {
   display: flex;
-  justify-content: center;		
+  justify-content: center;	
+  a.button {
+    float: left;
+  }	
 }	
 
 label {
-  color: rgb(255, 255, 255);
+  color: #c0c0c0b4;
   display: block;
   font-size: 0.9em;
-  font-weight: 600;
   margin: 0 0 1em 0;
   text-align: left;
+  font-size: 20pt;
 }
 
 input[type="text"],
-input[type="password"],
 input[type="email"],
 select,
 textarea {
@@ -110,7 +112,6 @@ textarea {
 }
 
   input[type="text"]:invalid,
-  input[type="password"]:invalid,
   input[type="email"]:invalid,
   select:invalid,
   textarea:invalid {
@@ -118,8 +119,6 @@ textarea {
   }
 
   input[type="text"]:focus,
-  input[type="password"]:focus,
-  input[type="email"]:focus,
   select:focus,
   textarea:focus {
     border-bottom: 3px solid rgb(255, 255, 255);
@@ -157,7 +156,6 @@ textarea {
   }
 
 input[type="text"],
-input[type="password"],
 input[type="email"],
 select {
   height: 2.75em;
@@ -174,11 +172,13 @@ textarea {
     display: block;
     article {
       display: inline-flex;
-      height: 50px;
+      height: auto;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      transition: 0.5s;
+      transition: 1s;
+      justify-content: center;
+      align-items: center;
       header {
         display: none;
       }
@@ -193,25 +193,39 @@ textarea {
   form {
     width: 100%;
   }
+  @media only screen and (max-width: 610px) {
+    .form {
+      padding: 0;
 
-  @media only screen and (max-width: 1068px) {
-    #form {
-      article {
-        display: block;
-        height: auto;
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-
-        p {
-          margin-top: 0;
-        }
+      h3 {
+        font-size: 16pt;
       }
     }
+
+    label {
+      font-size: 10pt;
     }
-  
-    form {
-      width: 100%;
+
+    #form {
+      article {
+        margin: 5px 0;
+      }
+      p {
+        font-size: 16px;
+        width: 100%;
+        align-items: left;
+        padding: 0;
+      }
     }
+  }
+
+  @media only screen and (max-width: 250px) {
+    #form {
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
 
 

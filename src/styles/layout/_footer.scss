@@ -17,8 +17,9 @@
   }
 
   .copyright {
+    letter-spacing:0.1em;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1em;
+    font-size: 16pt;
     margin: 10px 0 10px 0;
     padding: 0;
 
@@ -32,3 +33,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 414px) {
+  #footer {
+    padding: 20px 0;
+  
+    .copyright {
+      letter-spacing:0.1em;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 5pt;
+      margin: 10px 0 10px 0;
+      padding: 0;
+      }
+    }
+  }

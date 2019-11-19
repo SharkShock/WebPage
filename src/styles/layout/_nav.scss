@@ -1,75 +1,96 @@
-/* ------------------------- Nav ------------------------- */
 
-	
-#navPanel {
-  transform: translatex(20em);
-  transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  visibility: hidden;
-  overflow-y: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  background: $primary;
-  color: #daefe3;
-  height: 100%;
-  max-width: 80%;
-  width: 20em;
-  padding: 0.5em 1.25em;
-  z-index: 10010;
+/* ------------------------- Nav / Mobile ------------------------- */
 
-  a:not(.close) {
-    border-top: solid 1px $primary;
-    color: #daefe3;
-    font-weight: 600;
-    display: block;
-    padding: 0.75em 0;
-    text-decoration: none;
-    font-weight: 400;
-  }
-
-  a:not(.close):first-child {
-    border: none;
-  }
-
-  .close {
-    text-decoration: none;
-    border: 0;
-    color: #daefe3;
-    cursor: pointer;
-    display: block;
-    height: 4em;
-    padding-right: 1.25em;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    top: 0;
-    vertical-align: middle;
-    width: 5em;
-  }
-
-  .close:before {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-    content: '\f00d';
-    width: 3em;
-    height: 3em;
-    line-height: 3em;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: center;
-  }
-
-  .close:hover {
-    color: inherit;
-  }
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.7s ease-out;
+  line-height: 15px;
 }
 
-@media only screen and (max-width: 400px) {
-  #nav {
-    font-size: 12px;
+/* ---icon--- */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  background-color: transparent;
+}
+
+.header .menu-icon .navicon {
+  background: rgb(255, 255, 255);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* ---btn--- */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
   }
 }

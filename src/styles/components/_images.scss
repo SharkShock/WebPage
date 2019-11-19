@@ -37,7 +37,8 @@
   }
   
   p {
-    margin: 10px;
+    font-size: 20pt;
+    margin: 15px;
   }
 
   &:hover {
@@ -51,6 +52,7 @@
 .overlay {
   display:none;
   color: black;
+  letter-spacing:0.025em;
 }
 
 .team_img:hover .overlay {

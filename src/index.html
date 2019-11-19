@@ -21,17 +21,19 @@
 <body>
 
     <!------------------------- HEADER ------------------------->
-    <header id="header">
+    <header class="header">
         <div class="inner">
-            <a href="#" class="logo">LO</br>GO</a>
-            <nav id="nav">
-                <a href="#">HOME</a>
-                <a href="#">SERVICES</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">BLOG</a>
-            </nav>
-        </div>
-    </header>
+        <a href="" class="logo">LO</br>GO</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+    </div>
+      </header>
 
     <!------------------------- BANNER ------------------------->
 
@@ -63,7 +65,8 @@
     </section>
 
     <!------------------------- SERVICE ------------------------->
-    <section id="three" class="wrapper align-center">
+
+    <section class="wrapper align-center">
         <div>
             <h3>WE PROVIDE </br> THE BEST SERVICE</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting</br>
@@ -77,11 +80,11 @@
                         <img src="img/SERVICE/icon1.jpg" alt="icon 01" />
                     </div>
                     <header>
-                        <h3>WEB DEVELOPMENT</h3>
+                        <h3 class="title">WEB DEVELOPMENT</h3>
                     </header>
                     <p>
-                        There are many variations of passages</br>
-                        of Lorem Ipsum available, but the <br>
+                        There are many variations of passages
+                        of Lorem Ipsum available, but the
                         majority have suffered alteration
                     </p>
                 </article>
@@ -93,8 +96,8 @@
                         <h3>UI/UX DESIGN</h3>
                     </header>
                     <p>
-                        There are many variations of passages</br>
-                        of Lorem Ipsum available, but the <br>
+                        There are many variations of passages
+                        of Lorem Ipsum available, but the
                         majority have suffered alteration
                     </p>
                 </article>
@@ -106,8 +109,8 @@
                         <h3>SOFTWARE DEVELOPMENT</h3>
                     </header>
                     <p>
-                        There are many variations of passages</br>
-                        of Lorem Ipsum available, but the <br>
+                        There are many variations of passages
+                        of Lorem Ipsum available, but the
                         majority have suffered alteration
                     </p>
                 </article>
@@ -116,7 +119,7 @@
     </section>
 
     <!------------------------- PORTFOLIO ------------------------->
-    <section id="three" class="wrapper align-center">
+    <section class="wrapper align-center">
         <div>
             <h3>OUR</br> RECENT PROJECTS</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting</br>
@@ -155,17 +158,8 @@
         </div>
     </section>
 
-    <script>
-        jQuery(document).ready(function () {
-            jQuery('#hideshow').one('click', function (event) {
-                jQuery('#content').toggle('show');
-
-            });
-        });
-    </script>
-
     <!------------------------- TEAM MEMBER ------------------------->
-    <section id="three" class="wrapper align-center">
+    <section class="wrapper align-center">
         <div>
             <h3>OUR </br>TEAM MEMBERS</h3>
             <p>We are small team of passionate, creative and digita marketers</br>
@@ -232,10 +226,10 @@
         <div class="review-wraper">
             <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <img class="slideimg" src="./img/SLIDER/slider1.png">
-                    <div class="text">Designing is a matter of concentration. You go deep into what you want to do. It's
+                    <div class="slidetext">Designing is a matter of concentration. You go deep into what you want to do.
+                        It's
                         about intensive research, really. The concentration is warm and
                         intimate and like
                         the fire inside the earth intense but not distorted.</div>
@@ -243,7 +237,8 @@
 
                 <div class="mySlides fade">
                     <img class="slideimg" src="./img/SLIDER/slider2.png">
-                    <div class="text">Designing is a matter of concentration. You go deep into what you want to do. It's
+                    <div class="slidetext">Designing is a matter of concentration. You go deep into what you want to do.
+                        It's
                         about intensive research, really. The concentration is warm and
                         intimate and like
                         the fire inside the earth intense but not distorted.</div>
@@ -251,7 +246,8 @@
 
                 <div class="mySlides fade">
                     <img class="slideimg" src="./img/SLIDER/slider1.png">
-                    <div class="text">Designing is a matter of concentration. You go deep into what you want to do. It's
+                    <div class="slidetext">Designing is a matter of concentration. You go deep into what you want to do.
+                        It's
                         about intensive research, really. The concentration is warm and
                         intimate and like
                         the fire inside the earth intense but not distorted.</div>
@@ -268,7 +264,7 @@
     </section>
 
     <!------------------------- BRAND LOGO ------------------------->
-    <section id="three" class="wrapper align-center">
+    <section class="wrapper align-center">
         <div class="inner">
             <ul class="brand-logo">
                 <li><a href="#"><img src='./img/REVIEW/microsoft.png' /></a></li>
@@ -282,7 +278,7 @@
 
 
     <!------------------------- BLOG ------------------------->
-    <section id="three" class="wrapper align-center">
+    <section class="wrapper align-center">
         <div>
             <h3>RECENT BLOG</h3>
         </div>
@@ -329,8 +325,8 @@
                         adipiscing elit, sed do eiusmod tempor </br>
                         incididunt ut labore et dolore magna aliqua.</p>
                     <footer>
-                        <p style="float: left;"><img src='./img/ICONS/time.png' />&nbsp; sep 10'15</p>
-                        <p style="float: right;"><img src='./img/ICONS/comment.png' />&nbsp; 5 Coments</p>
+                            <p style="float: left;"><img src='./img/ICONS/time.png' />&nbsp; sep 10'15</p>
+                            <p style="float: right;"><img src='./img/ICONS/comment.png' />&nbsp; 5 Coments</p>
                     </footer>
                 </article>
             </div>
@@ -364,17 +360,19 @@
                     <header>
                         <h3> OUR OFFICE </h3>
                     </header>
+                    <footer>
                     <p><img src='./img/ICONS/home.png' />&nbsp; Street name, 89, City, Country </p>
                     <p><img src='./img/ICONS/phone.png' />&nbsp; +358465657634 </p>
                     <p><img src='./img/ICONS/email.png' />&nbsp; info@myzone.com </p>
+                    </footer>
                 </article>
             </div>
         </div>
     </section>
-    
+    
     <!------------------------- SOCIAL MEDIA LINKS ------------------------->
 
-    <section id="three" class="wrapper align-center">
+    <section class="wrapper align-center">
         <div class="inner">
             <h3 class="boldtitle">GO BUSINESS</h3>
             <ul class="social-icons">
@@ -404,6 +402,15 @@
     <script src="./js/skel.min.js"></script>
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#hideshow').one('click', function (event) {
+                jQuery('#content').toggle('show');
+
+            });
+        });
+    </script>
 
 
 </body>

@@ -101,6 +101,18 @@ section.wrapper, article.wrapper {
   }
 }
 
+@media only screen and (max-width: 250px) {
+  .brand-logo {
+    li {
+      a {
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+
 /* ------------------------- Blog section ------------------------- */
 
 .blog {
@@ -114,11 +126,15 @@ section.wrapper, article.wrapper {
   }
 
   h3 {
+    font-size: 24pt;
     text-align: left;
     padding: 25px 0 0 25px ;
   }
 
   p {
+    font-size: 14pt;
+    letter-spacing: 0;
+    line-height: 21pt;
     text-align: left;
     padding: 0 25px;
   }
@@ -126,6 +142,7 @@ section.wrapper, article.wrapper {
   footer {
     p{
       display: inline-block;
+      color: rgba(0, 0, 0, 0.5);
       img {
         width: 12px;
         height: 12px;
@@ -135,13 +152,48 @@ section.wrapper, article.wrapper {
   }
 }
 
+@media only screen and (max-width: 656px) {
+  .blog {
+  
+    h3 {
+      font-size: 14pt;
+    }
+  
+    p {
+      font-size: 10pt;
+    }
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .blog {
+  
+    h3 {
+      font-size: 10pt;
+    }
+  
+    p {
+      font-size: 8pt;
+    }
+  }
+}
+
+
+
 /* ------------------------- Social media links section ------------------------- */
 
 .boldtitle {
+  letter-spacing:0.075em;
   font-weight: bold;
-  font-size: 3.5em;
+  font-size: 50pt;
   margin: 0 0 20px 0;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 414px) {
+  .boldtitle {
+    font-size: 16pt;
+  }
 }
 
 .social-icons {
@@ -191,6 +243,15 @@ section.wrapper, article.wrapper {
 	}
 }
 
+.slidetext {
+  color: #434343;
+  line-height: 32pt;
+  letter-spacing:0.075em;
+  font-size: 16pt;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+
 @media only screen and (max-width: 1024px) {
 	.review {
     padding: 100px 20px;
@@ -206,12 +267,19 @@ section.wrapper, article.wrapper {
     article {
       width: 100%; 
     }
-	}
+  }
+  
+  .slidetext {
+    font-size: 10pt;
+    line-height: 16pt;
+  }
 }
+
 
 /* ------------------------- Service section ------------------------- */
 
 .service_box {
+  overflow: hidden;
   height:100%; width:100%;
   border: 3px solid rgba(3, 197, 155, 0);
   border-radius: 5px;
@@ -222,4 +290,30 @@ section.wrapper, article.wrapper {
     box-shadow: 0 15px 15px rgba(126, 126, 126, 0.6);
     transition: 1s;
    }
+
+  h3 {
+    padding: 0 15px;
+    font-size: 18pt;
+    letter-spacing:0.1em;
+  }
+
+  p {
+    padding: 0 20px;
+    line-height: 2.55em;
+    font-size: 16pt;
+    letter-spacing:0em;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .service_box {
+    h3 {
+      font-size: 12pt;
+    }
+
+    p {
+      font-size: 10pt;
+    }
+  }
 }
