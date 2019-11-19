@@ -38,7 +38,8 @@
   
   p {
     font-size: 20pt;
-    margin: 15px;
+    margin-bottom: 0;
+    line-height: 50px;
   }
 
   &:hover {
@@ -87,4 +88,15 @@
   }
 }
 
+.social-icons-team {
+  li {
+    display: inline;
+    margin: 0 10px;
+    filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
 
