@@ -1560,6 +1560,30 @@ button:hover,
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1282px) {
+  .overlay p {
+    font-size: 12pt;
+    margin-bottom: 0;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .overlay p {
+    font-size: 10pt;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .overlay p {
+    font-size: 8pt;
+    margin-bottom: 0;
+    line-height: 15px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .team_img {
     width: 48%;
