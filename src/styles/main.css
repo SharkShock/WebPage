@@ -1025,7 +1025,7 @@ article.wrapper header h6 + p {
 }
 
 .slidetext {
-  padding: 40px 5px;
+  padding: 10px 5px;
   color: #434343;
   line-height: 32pt;
   letter-spacing: 0.075em;
@@ -1050,7 +1050,7 @@ article.wrapper header h6 + p {
     width: 100%;
   }
   .slidetext {
-    padding: 10px 5px;
+    padding: 5px 5px;
     font-size: 10pt;
     line-height: 16pt;
   }
@@ -1631,7 +1631,7 @@ button:hover,
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 50px;
 }
 
 .slideshow-container {
@@ -1646,7 +1646,7 @@ button:hover,
 
 .text {
   color: #9a9a9a;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 14pt;
   padding: 8px 20px;
   bottom: 8px;
