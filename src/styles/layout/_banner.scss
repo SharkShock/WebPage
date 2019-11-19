@@ -281,6 +281,9 @@
     background-attachment: scroll;
   }
 
+
+
+
 @media screen and (max-width: 1000px) {
   .banner {
     h3 {
@@ -291,6 +294,10 @@
 
 @media screen and (max-width: 414px) {
   .banner {
+    .learnmore {
+      display: none;
+    }
+    
     h3 {
       margin-top: 20px;
       font-size: 20px;

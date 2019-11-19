@@ -692,6 +692,9 @@ body.is-mobile .banner > article {
 }
 
 @media screen and (max-width: 414px) {
+  .banner .learnmore {
+    display: none;
+  }
   .banner h3 {
     margin-top: 20px;
     font-size: 20px;
