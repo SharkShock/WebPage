@@ -76,7 +76,7 @@ body, input, select, textarea {
 }
 
 a {
-  color: #6cc091;
+  color: #1a8d1a;
   text-decoration: underline;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 }
 
 strong, b {
-  color: #555;
+  color: #555555;
   font-weight: 600;
 }
 
@@ -153,7 +153,7 @@ sup {
 }
 
 blockquote {
-  border-left: solid 4px #dbdbdb;
+  border-left: solid 4px #ffffff;
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em;
@@ -162,7 +162,7 @@ blockquote {
 code {
   background: rgba(144, 144, 144, 0.075);
   border-radius: 0;
-  border: solid 1px #dbdbdb;
+  border: solid 1px #ffffff;
   font-family: "montserrat", sans-serif;
   font-size: 0.9em;
   margin: 0 0.25em;
@@ -185,7 +185,7 @@ pre code {
 
 hr {
   border: 0;
-  border-bottom: solid 1px #dbdbdb;
+  border-bottom: solid 1px #ffffff;
   margin: 2em 0;
 }
 
@@ -285,7 +285,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 .header li a {
-  color: #fff;
+  color: #ffffff;
   display: block;
   padding: 20px 20px;
   text-decoration: none;
@@ -300,7 +300,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 
 .header .logo {
   text-decoration: none;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
   line-height: 22px;
@@ -327,7 +327,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 
 @media only screen and (max-width: 500px) {
   .header .logo {
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     line-height: 16px;
     letter-spacing: 1px;
     padding: 3px 4px 2px 4px;
@@ -436,7 +436,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 /* ------------------------- Banner ------------------------- */
 .banner {
   background-color: #26af5f;
-  color: #e2d1df;
+  color: #ffffff;
   padding: 8em 0;
   position: relative;
   font-family: "montserrat", sans-serif;
@@ -562,7 +562,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 
 .banner .indicators li.visible:before {
   background: #ffffff00;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
 }
 
 .banner > article {
@@ -749,7 +749,7 @@ body.is-mobile .banner > article {
 .flex.flex-1 article {
   width: 32%;
   height: auto;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 1281px) {
@@ -804,7 +804,7 @@ body.is-mobile .banner > article {
 .flex.flex-4 article {
   width: 32.5%;
   height: auto;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 1124px) {
@@ -1059,7 +1059,7 @@ article.wrapper header h6 + p {
 }
 
 .review article {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 5px;
 }
 
@@ -1176,7 +1176,7 @@ form .field.half.first {
 }
 
 .form h3 {
-  color: white;
+  color: #ffffff;
   font-size: 36pt;
   margin-bottom: 100px;
   float: left;
@@ -1186,8 +1186,8 @@ form .field.half.first {
   margin: 0 0 100px 50px;
   overflow: hidden;
   border-radius: 5px;
-  color: #555;
-  background-color: white;
+  color: #555555;
+  background-color: #ffffff;
   width: 60%;
 }
 
@@ -1258,9 +1258,9 @@ textarea {
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   border-radius: 5px 5px 0 0;
-  color: #fff;
+  color: #ffffff;
   display: block;
   outline: 0;
   padding: 0 1em;
@@ -1279,7 +1279,7 @@ textarea:invalid {
 input[type="text"]:focus,
 select:focus,
 textarea:focus {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #ffffff;
 }
 
 .select-wrapper {
@@ -1297,7 +1297,7 @@ textarea:focus {
 }
 
 .select-wrapper:before {
-  color: #fff;
+  color: #ffffff;
   display: block;
   height: 2.75em;
   line-height: 40pt;
@@ -1387,18 +1387,18 @@ form {
 #footer {
   padding: 50px 0;
   background: #414141;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
 #footer h3 {
-  color: #FFF;
+  color: #ffffff;
   margin-bottom: 2em !important;
 }
 
 #footer label {
   text-align: left;
-  color: #FFF;
+  color: #ffffff;
 }
 
 #footer .copyright {
@@ -1415,7 +1415,7 @@ form {
 }
 
 #footer .copyright a:hover {
-  color: #FFF;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 414px) {
@@ -1442,7 +1442,7 @@ button,
   background-color: #26af5f;
   -webkit-box-shadow: inset 0 0 0 3px #26af5f;
           box-shadow: inset 0 0 0 3px #26af5f;
-  color: #fff !important;
+  color: #ffffff !important;
   border-radius: 7px;
   border: 0;
   cursor: pointer;
@@ -1478,9 +1478,9 @@ buttonSend,
 .buttonSend {
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 0 3px white;
-          box-shadow: inset 0 0 0 3px white;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
   color: #26af5f !important;
   border-radius: 5px;
   border: 0;
@@ -1724,7 +1724,7 @@ buttonSend:hover,
 }
 
 .review-wraper {
-  background: #ffff;
+  background: #ffffff;
   border-radius: 5px;
   overflow: hidden;
   display: block;

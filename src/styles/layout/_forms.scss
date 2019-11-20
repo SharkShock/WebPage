@@ -1,4 +1,6 @@
 /* ------------------------- Form ------------------------- */
+@import '../utilities/variables';
+
 
 form {
   width: 50%;
@@ -31,7 +33,7 @@ form {
   padding: 60px;
   
   h3 {
-    color: white;
+    color: $white;
     font-size: 36pt;
     margin-bottom: 100px;
     float: left;
@@ -41,8 +43,8 @@ form {
     margin: 0 0 100px 50px;
     overflow:hidden;
     border-radius: 5px;
-    color: #555;
-    background-color: white;	
+    color: $gray;
+    background-color: $white;	
     width: 60%;
 
 
@@ -105,9 +107,9 @@ textarea {
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $white;
   border-radius: 5px 5px 0 0;
-  color: #fff;
+  color: $white;
   display: block;
   outline: 0;
   padding: 0 1em;
@@ -125,7 +127,7 @@ textarea {
   input[type="text"]:focus,
   select:focus,
   textarea:focus {
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid $white;
   }
 
 .select-wrapper {
@@ -143,7 +145,7 @@ textarea {
   }
 
   .select-wrapper:before {
-    color: #fff;
+    color: $white;
     display: block;
     height: 2.75em;
     line-height: 40pt;

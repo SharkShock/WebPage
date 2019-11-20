@@ -1,4 +1,5 @@
 /* ------------------------- Flex ------------------------- */
+@import '../utilities/variables';
 
 .flex {
 	justify-content: space-between;
@@ -12,7 +13,7 @@
 	article {
 		width: 32%;
 		height: auto;
-		background-color: white;      
+		background-color: $white;      
 	}
 }
 
@@ -56,7 +57,7 @@
 	article {
 		width: 32.5%;
 		height: auto;
-		background-color: white;   
+		background-color: $white;   
 	}
 }
 

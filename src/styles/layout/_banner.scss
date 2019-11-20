@@ -1,9 +1,9 @@
 /* ------------------------- Banner ------------------------- */
-
+@import '../utilities/variables';
 
 .banner {
   background-color: $primary;
-  color: #e2d1df;
+  color: $white;
   padding: 8em 0;
   position: relative;
   font-family: "montserrat", sans-serif;
@@ -26,19 +26,19 @@
 }
 
   .banner input, .banner select, .banner textarea {
-    color: #ffffff;
+    color: $white;
   }
 
   .banner a {
-    color: #ffffff;
+    color: $white;
   }
 
   .banner strong, .banner b {
-    color: #ffffff;
+    color: $white;
   }
 
   .banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
-    color: #ffffff;
+    color: $white;
   }
 
   .banner blockquote {
@@ -130,7 +130,7 @@
 
       .banner .indicators li.visible:before {
         background: #ffffff00;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid $white;
       }
 
   .banner > article {
