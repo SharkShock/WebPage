@@ -482,8 +482,8 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 .banner.full {
-  min-height: 80vh;
-  height: 80vh !important;
+  min-height: 70vh;
+  height: 70vh !important;
 }
 
 .banner.half {
@@ -1186,7 +1186,7 @@ form h3 {
   line-height: 35pt;
   letter-spacing: -0.02em;
   text-align: left;
-  padding: 0 0 0 60px;
+  padding: 50px 0 0 60px;
   margin: 0;
   font-size: 20pt;
 }
@@ -1321,6 +1321,7 @@ textarea {
     display: none;
   }
   #form article p {
+    padding: 0 0 0 60px;
     margin-top: 10px;
   }
 }
