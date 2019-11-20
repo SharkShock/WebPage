@@ -237,7 +237,7 @@ section.wrapper, article.wrapper {
   line-height: 32pt;
   letter-spacing:0.075em;
   font-size: 16pt;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 
 
@@ -250,7 +250,7 @@ section.wrapper, article.wrapper {
 	}
 }
 
-@media only screen and (max-width: 656px) {
+@media only screen and (max-width: 660px) {
 	.review {
     padding: 100px 10px;
     article {

@@ -6,7 +6,7 @@
   color: #e2d1df;
   padding: 8em 0;
   position: relative;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
 
 }
 
@@ -299,7 +299,7 @@
     }
     
     h3 {
-      margin-top: 20px;
+      margin-top: 40px;
       font-size: 20px;
       float: left;
       text-align: left;
@@ -308,10 +308,10 @@
   }
 }
 
-@media screen and (max-width: 208px) {
+@media screen and (max-width: 228px) {
   .banner {
     h3 {
-      display: none;
+      font-size: 12pt;
     }
   }
 }

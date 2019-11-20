@@ -42,7 +42,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: #9a9a9a;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 
 @media screen and (max-width: 1680px) {
@@ -163,7 +163,7 @@ code {
   background: rgba(144, 144, 144, 0.075);
   border-radius: 0;
   border: solid 1px #dbdbdb;
-  font-family: "Courier New", monospace;
+  font-family: "montserrat", sans-serif;
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
@@ -171,7 +171,7 @@ code {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: "Courier New", monospace;
+  font-family: "montserrat", sans-serif;
   font-size: 0.9em;
   margin: 0 0 2em 0;
 }
@@ -323,6 +323,16 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .header .logo {
+    border: 2px solid white;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 3px 4px 2px 4px;
+    font-size: 12pt;
+  }
+}
+
 /* ------------------------- Nav / Mobile ------------------------- */
 .header .menu {
   clear: both;
@@ -427,7 +437,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   color: #e2d1df;
   padding: 8em 0;
   position: relative;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 
 .banner input, .banner select, .banner textarea {
@@ -696,7 +706,7 @@ body.is-mobile .banner > article {
     display: none;
   }
   .banner h3 {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 20px;
     float: left;
     text-align: left;
@@ -704,9 +714,9 @@ body.is-mobile .banner > article {
   }
 }
 
-@media screen and (max-width: 208px) {
+@media screen and (max-width: 228px) {
   .banner h3 {
-    display: none;
+    font-size: 12pt;
   }
 }
 
@@ -1030,7 +1040,7 @@ article.wrapper header h6 + p {
   line-height: 32pt;
   letter-spacing: 0.075em;
   font-size: 16pt;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1042,7 +1052,7 @@ article.wrapper header h6 + p {
   }
 }
 
-@media only screen and (max-width: 656px) {
+@media only screen and (max-width: 660px) {
   .review {
     padding: 100px 10px;
   }
@@ -1240,7 +1250,7 @@ textarea:focus {
 
 .select-wrapper:before {
   content: "";
-  font-family: FontAwesome;
+  font-family: "montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -1646,7 +1656,7 @@ button:hover,
 
 .text {
   color: #9a9a9a;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
   font-size: 14pt;
   padding: 8px 20px;
   bottom: 8px;

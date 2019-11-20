@@ -71,3 +71,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .header .logo {
+    border: 2px solid white;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 3px 4px 2px 4px;
+    font-size: 12pt;
+  }
+}
