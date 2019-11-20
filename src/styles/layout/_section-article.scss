@@ -134,7 +134,7 @@ section.wrapper, article.wrapper {
   p {
     font-size: 14pt;
     letter-spacing: 0;
-    line-height: 21pt;
+    line-height: 24.5pt;
     text-align: left;
     padding: 0 25px;
   }
@@ -147,6 +147,17 @@ section.wrapper, article.wrapper {
         width: 12px;
         height: 12px;
         filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1123px) {
+  .blog {
+  
+    footer {
+      p {
+        font-size: 12pt;
       }
     }
   }
@@ -282,16 +293,16 @@ section.wrapper, article.wrapper {
    }
 
   h3 {
-    padding: 0 15px;
+    margin: 10px 0 0 0;
     font-size: 18pt;
     letter-spacing:0.1em;
   }
 
   p {
-    padding: 0 20px;
-    line-height: 2.55em;
+    padding: 0 10px;
+    line-height: 32pt;
     font-size: 16pt;
-    letter-spacing:0em;
+    letter-spacing: 0;
   }
 }
 

@@ -29,8 +29,16 @@
   .banner {
     h3 {
       font-size: 50px;
-      letter-spacing: 0.025em;;
+      letter-spacing: 0.025em;
+      line-height: 71pt;
     }
+
+    .learnmore {
+      font-size: 18pt;
+      line-height: 38pt;
+      letter-spacing:0.075em;
+    }
+
   }
 
   .banner blockquote {

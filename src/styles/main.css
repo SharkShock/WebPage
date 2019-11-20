@@ -97,13 +97,13 @@ p {
   color: #000000;
   margin: 0 0 2em 0;
   font-size: 18pt;
-  line-height: 3em;
+  line-height: 36pt;
   letter-spacing: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #4a4747;
-  line-height: 2em;
+  line-height: 48pt;
   letter-spacing: 0.05em;
   margin: 0 0 1em 0;
 }
@@ -225,7 +225,7 @@ hr.major {
 @media screen and (max-width: 680px) {
   p {
     font-size: 12pt;
-    line-height: 2em;
+    line-height: 36pt;
     padding: 0 10px;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -236,7 +236,7 @@ hr.major {
 @media screen and (max-width: 320px) {
   p {
     font-size: 10pt;
-    line-height: 1.4em;
+    line-height: 30pt;
   }
   h1, h2, h3, h4, h5, h6 {
     font-size: 12pt;
@@ -459,6 +459,13 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 .banner h3 {
   font-size: 50px;
   letter-spacing: 0.025em;
+  line-height: 71pt;
+}
+
+.banner .learnmore {
+  font-size: 18pt;
+  line-height: 38pt;
+  letter-spacing: 0.075em;
 }
 
 .banner blockquote {
@@ -745,7 +752,7 @@ body.is-mobile .banner > article {
   background-color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1281px) {
   .flex.flex-1 article {
     width: 100%;
     margin: 15px 20% 0 20%;
@@ -799,7 +806,7 @@ body.is-mobile .banner > article {
   background-color: white;
 }
 
-@media only screen and (max-width: 876px) {
+@media only screen and (max-width: 1024px) {
   .flex.flex-4 {
     display: block;
   }
@@ -948,7 +955,7 @@ article.wrapper header h6 + p {
 .blog p {
   font-size: 14pt;
   letter-spacing: 0;
-  line-height: 21pt;
+  line-height: 24.5pt;
   text-align: left;
   padding: 0 25px;
 }
@@ -963,6 +970,12 @@ article.wrapper header h6 + p {
   height: 12px;
   -webkit-filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
           filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+@media only screen and (max-width: 1123px) {
+  .blog footer p {
+    font-size: 12pt;
+  }
 }
 
 @media only screen and (max-width: 656px) {
@@ -1087,16 +1100,16 @@ article.wrapper header h6 + p {
 }
 
 .service_box h3 {
-  padding: 0 15px;
+  margin: 10px 0 0 0;
   font-size: 18pt;
   letter-spacing: 0.1em;
 }
 
 .service_box p {
-  padding: 0 20px;
-  line-height: 2.55em;
+  padding: 0 10px;
+  line-height: 32pt;
   font-size: 16pt;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 680px) {
@@ -1170,7 +1183,7 @@ form h3 {
 }
 
 .form article p {
-  line-height: 29.27 pt;
+  line-height: 35pt;
   letter-spacing: -0.02em;
   text-align: left;
   padding: 0 0 0 60px;
@@ -1260,7 +1273,7 @@ textarea:focus {
   color: #fff;
   display: block;
   height: 2.75em;
-  line-height: 2.75em;
+  line-height: 40pt;
   pointer-events: none;
   position: absolute;
   right: 0;
@@ -1316,7 +1329,7 @@ form {
   width: 100%;
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 670px) {
   .form {
     padding: 0;
   }
@@ -1441,7 +1454,7 @@ button:hover,
   display: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   input[type="submit"],
   input[type="reset"],
   input[type="button"],
