@@ -1017,9 +1017,15 @@ article.wrapper header h6 + p {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 700px) {
   .boldtitle {
-    font-size: 16pt;
+    font-size: 30pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .boldtitle {
+    font-size: 12pt;
   }
 }
 
