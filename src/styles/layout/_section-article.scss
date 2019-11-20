@@ -152,13 +152,22 @@ section.wrapper, article.wrapper {
   }
 }
 
+@media only screen and (max-width: 1331px) {
+  .blog {
+    h3 {
+      line-height: 26pt;
+    }
+
+    
+
+  }
+}
+
 @media only screen and (max-width: 1123px) {
   .blog {
-  
-    footer {
-      p {
-        font-size: 12pt;
-      }
+
+    h3 {
+      line-height: 30pt;
     }
   }
 }
@@ -172,6 +181,7 @@ section.wrapper, article.wrapper {
   
     p {
       font-size: 10pt;
+      line-height: 16pt;
     }
   }
 }
@@ -315,6 +325,7 @@ section.wrapper, article.wrapper {
 
     p {
       font-size: 10pt;
+      line-height: 20pt;
     }
   }
 }

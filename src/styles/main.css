@@ -225,11 +225,12 @@ hr.major {
 @media screen and (max-width: 680px) {
   p {
     font-size: 12pt;
-    line-height: 36pt;
+    line-height: 24pt;
     padding: 0 10px;
   }
   h1, h2, h3, h4, h5, h6 {
     font-size: 14pt;
+    line-height: 34pt;
   }
 }
 
@@ -703,8 +704,12 @@ body.is-mobile .banner > article {
 }
 
 @media screen and (max-width: 1000px) {
+  .banner .learnmore {
+    font-size: 14px;
+  }
   .banner h3 {
     font-size: 24px;
+    line-height: 40pt;
   }
 }
 
@@ -806,7 +811,7 @@ body.is-mobile .banner > article {
   background-color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1124px) {
   .flex.flex-4 {
     display: block;
   }
@@ -972,9 +977,15 @@ article.wrapper header h6 + p {
           filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
+@media only screen and (max-width: 1331px) {
+  .blog h3 {
+    line-height: 26pt;
+  }
+}
+
 @media only screen and (max-width: 1123px) {
-  .blog footer p {
-    font-size: 12pt;
+  .blog h3 {
+    line-height: 30pt;
   }
 }
 
@@ -984,6 +995,7 @@ article.wrapper header h6 + p {
   }
   .blog p {
     font-size: 10pt;
+    line-height: 16pt;
   }
 }
 
@@ -1118,6 +1130,7 @@ article.wrapper header h6 + p {
   }
   .service_box p {
     font-size: 10pt;
+    line-height: 20pt;
   }
 }
 
