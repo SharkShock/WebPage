@@ -175,11 +175,11 @@ textarea {
       display: inline-flex;
       height: auto;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 15px auto;
       transition: 1s;
       justify-content: center;
       align-items: center;
+      padding: 20px 0;
       header {
         display: none;
       }
@@ -208,10 +208,6 @@ textarea {
     }
 
     #form {
-      article {
-        margin: 5px 0;
-        padding: 20px 0;
-      }
       p {
         font-size: 16px;
         width: 100%;
@@ -221,7 +217,7 @@ textarea {
     }
   }
 
-  @media only screen and (max-width: 250px) {
+  @media only screen and (max-width: 310px) {
     #form {
       p {
         font-size: 10px;

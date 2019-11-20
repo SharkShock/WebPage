@@ -701,7 +701,7 @@ body.is-mobile .banner > article {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 562px) {
   .banner .learnmore {
     display: none;
   }
@@ -1293,8 +1293,7 @@ textarea {
     display: inline-flex;
     height: auto;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px auto;
     -webkit-transition: 1s;
     transition: 1s;
     -webkit-box-pack: center;
@@ -1303,6 +1302,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 20px 0;
   }
   #form article header {
     display: none;
@@ -1326,10 +1326,6 @@ form {
   label {
     font-size: 10pt;
   }
-  #form article {
-    margin: 5px 0;
-    padding: 20px 0;
-  }
   #form p {
     font-size: 16px;
     width: 100%;
@@ -1340,7 +1336,7 @@ form {
   }
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 310px) {
   #form p {
     font-size: 10px;
   }
@@ -1581,7 +1577,7 @@ button:hover,
   .overlay p {
     font-size: 12pt;
     margin-bottom: 0;
-    line-height: 30px;
+    line-height: 32px;
   }
 }
 
@@ -1590,14 +1586,6 @@ button:hover,
     font-size: 10pt;
     margin-bottom: 0;
     line-height: 20px;
-  }
-}
-
-@media only screen and (max-width: 200px) {
-  .overlay p {
-    font-size: 8pt;
-    margin-bottom: 0;
-    line-height: 15px;
   }
 }
 
@@ -1610,6 +1598,27 @@ button:hover,
 @media only screen and (max-width: 414px) {
   .team_img {
     width: 100%;
+  }
+  .overlay p {
+    font-size: 12pt;
+    margin-bottom: 0;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 260px) {
+  .overlay p {
+    font-size: 10pt;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .overlay p {
+    font-size: 8pt;
+    margin-bottom: 0;
+    line-height: 15px;
   }
 }
 

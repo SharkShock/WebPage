@@ -73,7 +73,7 @@
     p {
       font-size: 12pt;
     margin-bottom: 0;
-    line-height: 30px;
+    line-height: 32px;
     }
   }
 }
@@ -88,16 +88,6 @@
   }
 }
 
-@media only screen and (max-width: 200px){
-  .overlay {
-    p {
-      font-size: 8pt;
-    margin-bottom: 0;
-    line-height: 15px;
-    }
-  }
-}
-
 @media only screen and (max-width: 1024px) {
 	.team_img {
     width: 48%;
@@ -105,9 +95,40 @@
 }
 
 @media only screen and (max-width: 414px) {
+
 	.team_img {
     width: 100%;
-	}
+  }
+  
+  .overlay {
+    p {
+      font-size: 12pt;
+    margin-bottom: 0;
+    line-height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 260px) {
+
+  .overlay {
+    p {
+      font-size: 10pt;
+    margin-bottom: 0;
+    line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 200px) {
+
+  .overlay {
+    p {
+      font-size: 8pt;
+    margin-bottom: 0;
+    line-height: 15px;
+    }
+  }
 }
 
 
