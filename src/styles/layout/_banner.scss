@@ -8,6 +8,21 @@
   position: relative;
   font-family: "montserrat", sans-serif;
 
+  .inner {
+    margin-top: 100px;
+  }
+
+  h3 {
+    font-size: 50px;
+    letter-spacing: 0.025em;
+    line-height: 71pt;
+  }
+
+  .learnmore {
+    font-size: 18pt;
+    line-height: 38pt;
+    letter-spacing:0.075em;
+  }
 }
 
   .banner input, .banner select, .banner textarea {
@@ -26,21 +41,6 @@
     color: #ffffff;
   }
 
-  .banner {
-    h3 {
-      font-size: 50px;
-      letter-spacing: 0.025em;
-      line-height: 71pt;
-    }
-
-    .learnmore {
-      font-size: 18pt;
-      line-height: 38pt;
-      letter-spacing:0.075em;
-    }
-
-  }
-
   .banner blockquote {
     border-left-color: rgba(255, 255, 255, 0.25);
   }
@@ -55,8 +55,8 @@
   }
 
   .banner.full {
-    min-height: 70vh;
-    height: 70vh !important;
+    min-height: 80vh;
+    height: 80vh !important;
   }
 
   .banner.half {
@@ -91,7 +91,7 @@
     bottom: 0.5em;
     left: 0;
     list-style: none;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     position: absolute;
     text-align: center;
@@ -116,7 +116,7 @@
         background: rgba(85, 85, 85, 0.274);
         transform: rotate(45deg);    //rotator for indicator            
         border-radius: 0;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.616);
         content: '';
         display: inline-block;       
         height: 0.8em;
@@ -129,7 +129,8 @@
       }
 
       .banner .indicators li.visible:before {
-        background: #9a9a9a;
+        background: #ffffff00;
+        border: 2px solid rgb(255, 255, 255);
       }
 
   .banner > article {
@@ -180,17 +181,6 @@
 
       .banner > article .inner > :last-child {
         margin-bottom: 0;
-      }
-
-    .banner > article h2 {
-      font-size: 7rem;
-      margin-bottom: 0;
-      color: #FFF;
-      font-weight: 300;
-    }
-
-      .banner > article h2:after {
-        display: none;
       }
 
     .banner > article p {

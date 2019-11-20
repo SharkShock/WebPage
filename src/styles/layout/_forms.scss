@@ -1,7 +1,6 @@
 /* ------------------------- Form ------------------------- */
 
 form {
-
   width: 50%;
 
   .field {
@@ -20,10 +19,6 @@ form {
   .field.half.first {
     margin-right: 3%;
   }
-
-  h3 {
-    color: rgb(255, 255, 255);
-  }
 }
 
 .form {
@@ -37,18 +32,18 @@ form {
   
   h3 {
     color: white;
-    padding: 40px;
     font-size: 36pt;
+    margin-bottom: 100px;
+    float: left;
 
   }
   article {
-    margin: 0 0 0 50px;
+    margin: 0 0 100px 50px;
     overflow:hidden;
     border-radius: 5px;
     color: #555;
     background-color: white;	
-    width: 80%;
-    padding: 0 0 80px 0;
+    width: 60%;
 
 
     h3 {
@@ -56,21 +51,22 @@ form {
       color: #4a4747c9;
       text-align: left;
       padding: 0 0 0 60px;
-      margin: 40px 0 0 0;
+      margin: 40px 0;
       font-size: 40pt;
+      width: 100%;
     }
   
     p {
       line-height: 35pt;
       letter-spacing:-0.02em;
       text-align: left;
-      padding: 50px 0 0 60px;
+      padding: 50px 20px 0 60px;
       margin: 0;
       font-size: 20pt;
       img {
         width: 15px;
         height: auto;
-        filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+        filter: invert(60%) sepia(25%) saturate(1171%) hue-rotate(92deg) brightness(88%) contrast(93%);
       }
     }
   }
@@ -79,7 +75,7 @@ form {
 #form {
   display: flex;
   justify-content: center;	
-  a.button {
+  a.buttonSend {
     float: left;
   }	
 }	
@@ -91,6 +87,13 @@ label {
   margin: 0 0 1em 0;
   text-align: left;
   font-size: 20pt;
+
+  img {
+    width: 25px;
+    height: auto;
+    opacity: 0.5;
+    filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(264deg) brightness(118%) contrast(95%);
+  }
 }
 
 input[type="text"],
